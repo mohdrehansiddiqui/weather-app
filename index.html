@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App in JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Linking BoxIcon for Icon -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+    <form class="card" onsubmit="getweather(); return false">
+      <div class="search">
+        <input type="text" id="search" placeholder="Enter City Name">
+        <button type="submit">
+          <img src="./images/search.png" alt="">
+      </button>
+      </div>
+      <div class="weather">
+        <img src="./images/rain.png" alt="" class="weather-icon">
+        <h1 id="temp">22°C</h1>
+        <h2 id="City">New York</h2>
+        <div class="details">
+          <div class="col">
+            <img src="./images/humidity.png" alt="">
+            <div>
+              <p id="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="./images/wind.png" alt="">
+            <div>
+              <p id="Wind">15 km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    
+<!-- <form onsubmit="getweather(); return false">
+    <input type="text" id="search">
+    <button type="submit">
+        <img src="./images/search.png" alt="">
+    </button>
+</form>
+
+<div>
+    <h1 id="temp"></h1>
+    <h1 id="humidity"></h1>
+    <h1 id="temp_max"></h1>
+    <h1 id="temp_min"></h1>
+    <h1 id="City"></h1>
+    <h1 id="Wind"></h1>
+</div> -->
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </body>
+</html>
